@@ -5,7 +5,7 @@ $("#searchBtn").click(function () {
     var title = inputField.value;
     console.log(title);
     //had to prepend herokuapp to get rid of error message
-    var queryURL = "https://cors-anywhere.herokuapp.com/api.openweathermap.org/data/2.5/forecast?q=" + title + "&appid=5b3efdfbee101e367fea7a4fc66bf73e";
+    var queryURL = "https://cors-anywhere.herokuapp.com/api.openweathermap.org/data/2.5/forecast?q=" + title + "&cnt=5&appid=5b3efdfbee101e367fea7a4fc66bf73e";
 
     $.ajax({
         dataType: "json",
@@ -13,6 +13,7 @@ $("#searchBtn").click(function () {
         method: "GET"
     }).then(function (response) {
         console.log(response);
+        console.log(response.list[0]);
     });
 });
 
