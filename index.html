@@ -8,57 +8,86 @@
     <title>Weather</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 </head>
 
 <body>
-    <h1 class="row bg-info border-bottom border-secondary no-gutters text-white text-center"
+    <h1 id="citynameheader" class="row bg-info border-bottom border-secondary no-gutters text-white text-center"
         style="padding: 15px; margin-bottom: 20px;">5 Day Forecast</h1>
-    <div class="active-cyan-3 active-cyan-4 mb-4">
+    <div>
         <form class="form-inline">
             <input id="cityName" class="form-control" type="text" placeholder="City Name" aria-label="Search">
             <button id="searchBtn" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
+        <br>
+        <div class="dropdown">
+            <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Previous Searches
+            </button>
+            <div id="dropdownmenu" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" id="dd1">Awaiting Search History</a>
+                <a class="dropdown-item" id="dd2">Awaiting Search History</a>
+                <a class="dropdown-item" id="dd3">Awaiting Search History</a>
+                <a class="dropdown-item" id="dd4">Awaiting Search History</a>
+                <a class="dropdown-item" id="dd5">Awaiting Search History</a>
+
+            </div>
+        </div>
     </div>
+
     <div>
-        <h2></h2>
+
+
         <form class="form-inline">
-            <div id="day1" class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
+            <div id="day1" class="card col-2" style="width: 14rem; display: none;">
+                <img id="card1" class="card-img-top" src="" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Today</h5>
-                    <p class="card-text"></p>
+                    <p id="text1" class="card-text"></p>
                 </div>
             </div>
-            <div id="day2" class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
+            <i class="fas fa-sun"></i>
+            <div id="day2" class="card col-2" style="width: 14rem; display: none;">
+
+                <img id="card2" class="card-img-top" src="" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Tomorrow</h5>
-                    <p class="card-text"></p>
+                    <p id="text2" class="card-text"></p>
                 </div>
             </div>
-            <div id="day3" class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
+            <div id="day3" class="card col-2" style="width: 14rem; display: none;">
+                <img id="card3" class="card-img-top" src="" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Day 3</h5>
-                    <p class="card-text"></p>
+                    <p id="text3" class="card-text"></p>
                 </div>
             </div>
-            <div id="day4" class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Day 4</h5>
-                    <p class="card-text"></p>
-                </div>
+            <div id="day4" class="card col-2" style="width: 14rem; display: none;">
+                <img id="card4" class="card-img-top" src="" alt="Card image cap">
+                <div class="card-body"></div>
+                <h5 class="card-title">Day 4</h5>
+                <p id="text4" class="card-text"></p>
             </div>
-            <div id="day5" class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Day 5</h5>
-                    <p class="card-text"></p>
-                </div>
-            </div>
-        </form>
     </div>
+    <div id="day5" class="card col-2" style="width: 14rem; display: none;">
+        <img id="card5" class="card-img-top" src="" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Day 5</h5>
+            <p id="text5" class="card-text"></p>
+        </div>
+    </div>
+    </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./Assets/script.js"></script>
 </body>
