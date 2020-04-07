@@ -109,7 +109,7 @@ function citySearch(title) {
 
             }
             else if (condition === "Clouds") {
-                $(cardString).attr("src", "https://lh3.googleusercontent.com/proxy/Eo3aEUeGc1MRyoMAc73sHQY5Rq_XGqx-lxJJOaVWFFos8iQE-TBjrhRuKSvo3Xp09dI_edafAQk2_hrdA2ESbTlRIhjal7A");
+                $(cardString).attr("src", "https://cdn1.iconfinder.com/data/icons/hawcons/32/700281-icon-40-clouds-512.png");
 
             }
 
